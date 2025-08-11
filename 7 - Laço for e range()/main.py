@@ -20,3 +20,6 @@ for n in range(10):
 
 for x in range(2, 20, 3):
     print(x)
+    
+for a in range(1, 11, 2):
+    print(a)
