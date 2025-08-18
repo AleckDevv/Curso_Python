@@ -1,4 +1,4 @@
-"""idade = 20
+idade = 20
 possui_carteira = True
 
 # ambas as condições tem que ser true
@@ -27,9 +27,6 @@ if not tem_passagem:
 else:
     print("boa viagem")
 
-
-
-"""
 
 idade = int(input("digite sua idade: "))
 tem_convite = input("você tem convite (s/n)").lower()
