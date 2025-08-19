@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 notas = [10, 20, 30]
 notas2 = [1, 2, 3, 4, 5, ["alex", "soares", "lopes"]]
 print(notas)
@@ -82,3 +83,16 @@ numeros.pop()
 print(numeros)
 
 
+=======
+for i in range(1, 4):
+    for j in range(1, 4):
+        print(f"i = {i}, j = {j}")
+
+
+for numero in range(1, 11):
+    print(f"Tabuada do Número: {numero}")
+
+    for multiplicar in range(1, 11):
+        print(f" {numero} x {multiplicar} = {numero * multiplicar}")
+        print("-" * 20)
+>>>>>>> 85681606e5d58da60150053cb02e167353662b6a
