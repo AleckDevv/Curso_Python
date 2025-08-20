@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Loja</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Loja de Produtos</h1>
+
+    <form method="POST">
+        <input type="text" name="produto" placeholder="Digite um produto">
+        <button type="submit">Adicionar</button>
+    </form>
+
+    <p>{{ mensagem }}</p>
+
+    <h2>Produtos disponíveis</h2>
+    <ul>
+        {% for nome, preco in produtos.items() %}
+            <li>{{ nome }} - R$ {{ preco }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Carrinho</h2>
+    <ul>
+        {% for nome, preco in carrinho %}
+            <li>{{ nome }} - R$ {{ preco }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="{{ url_for('resumo') }}">Ver resumo</a>
+</body>
+</html>
